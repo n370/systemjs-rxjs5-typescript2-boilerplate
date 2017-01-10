@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="/node_modules/systemjs/dist/system.js"></script>
+    <!-- https://github.com/ReactiveX/rxjs/issues/2177 -->
+    <script src="/node_modules/tslib/tslib.js"></script>
+    <!-- -->
+</head>
+<body>
+    <button id="start">Start</button>
+    <script>
+        System.config({
+            packages: {
+                "dist": {
+                    "defaultExtension": "js",
+                    "main": "main"
+                }
+            },
+            map: {
+                "@reactivex/rxjs": "/node_modules/@reactivex/rxjs/dist/global/Rx.js"
+            }
+        });
+
+        System.import("dist");
+    </script>
+</body>
+</html>
