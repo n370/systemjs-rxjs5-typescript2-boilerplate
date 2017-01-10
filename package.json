@@ -1,0 +1,21 @@
+{
+  "name": "rxjs-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@reactivex/rxjs": "^5.0.3",
+    "systemjs": "^0.19.41"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "typescript": "^2.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc -w & http-server &"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

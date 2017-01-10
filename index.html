@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="/node_modules/systemjs/dist/system.js"></script>
+</head>
+<body>
+    <button id="start">Click</button>
+    <script>
+        System.config({
+            packages: {
+                "built": {
+                    "defaultExtension": "js",
+                    "main": "main"
+                }
+            },
+            map: {
+                "@reactivex/rxjs": "/node_modules/@reactivex/rxjs/dist/global/Rx.js"
+            }
+        });
+
+        System.import("built");
+    </script>
+</body>
+</html>
